@@ -15,7 +15,7 @@ public class Main {
 //		try {
 //			System.out.println("Fetching products");
 //			
-//			ProductResponse productResponse = Product.fetch("");
+//			ProductResponse productResponse = Product.fetch("apiKey");
 //			Product[] products = productResponse.getProducts();
 //			for (Product product : products) {
 //				System.out.println("Name -> " + product.name);
@@ -33,6 +33,7 @@ public class Main {
 //			CheckoutResponse checkoutResponse = Checkout.completeCheckout(
 //					"apiKey", 
 //					"username", cartItems);
+//			
 //			System.out.println("Redirect URL -> " + checkoutResponse.getRedirect());
 //			
 //		} catch (Exception e) {

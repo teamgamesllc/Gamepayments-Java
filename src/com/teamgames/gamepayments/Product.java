@@ -17,6 +17,7 @@ public class Product {
 	public String description;
 	public String image;
 	public boolean disabled;
+	public Sale sales[];
 
 	public static ProductResponse fetch(String apiKey) throws Exception {
 		Map<String, Object> params = new LinkedHashMap<>();
