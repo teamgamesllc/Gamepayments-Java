@@ -7,7 +7,6 @@ import java.util.Map;
 import org.google.gson.Gson;
 
 import com.teamgames.gamepayments.Configurations;
-import com.teamgames.gamepayments.ProductResponse;
 import com.teamgames.gamepayments.cart.CartItem;
 import com.teamgames.request.Connection;
 
