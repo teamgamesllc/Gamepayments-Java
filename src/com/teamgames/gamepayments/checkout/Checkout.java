@@ -16,7 +16,7 @@ public class Checkout {
 	public boolean completedCheckout;
 	public String redirect;
 
-	public static ProductResponse fetch(String apiKey, String username, List<CartItem> cartItems) throws Exception {
+	public static CheckoutResponse completeCheckout(String apiKey, String username, List<CartItem> cartItems) throws Exception {
 		Map<String, Object> params = new LinkedHashMap<>();
 		params.put("username", username);
 		params.put("cartItems", cartItems);
@@ -29,7 +29,7 @@ public class Checkout {
 
 		Gson gson = new Gson();
 
-		ProductResponse apiResponse = gson.fromJson(serverResponse, ProductResponse.class);
+		CheckoutResponse apiResponse = gson.fromJson(serverResponse, CheckoutResponse.class);
 
 		return apiResponse;
 	}
