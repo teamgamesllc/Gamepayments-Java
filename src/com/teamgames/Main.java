@@ -25,10 +25,10 @@ public class Main {
 //			e.printStackTrace();
 //		}
 		
-		List<CartItem> cartItems = new ArrayList<CartItem>();
-		cartItems.add(new CartItem(591, 1));
-		cartItems.add(new CartItem(583, 1));
-		
+//		List<CartItem> cartItems = new ArrayList<CartItem>();
+//		cartItems.add(new CartItem(591, 1));
+//		cartItems.add(new CartItem(583, 1));
+//		
 //		try {
 //			CheckoutResponse checkoutResponse = Checkout.completeCheckout(
 //					"apiKey", 
