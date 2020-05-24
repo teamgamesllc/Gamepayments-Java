@@ -8,6 +8,14 @@ import org.google.gson.Gson;
 import com.teamgames.request.Connection;
 
 public class Product {
+	
+	public int productId;
+	public String name;
+	public double price;
+	public int quantity;
+	public String description;
+	public String image;
+	public boolean disabled;
 
 	public static ProductResponse fetch(String apiKey) throws Exception {
 		Map<String, Object> params = new LinkedHashMap<>();
@@ -17,6 +25,8 @@ public class Product {
 
 		final String serverResponse = Connection.sendPostParams(params,
 				ADDRESS + "/api/v2/client/global/products", apiKey);
+		
+		System.out.println("Response is -> " + serverResponse);
 
 		Gson gson = new Gson();
 
