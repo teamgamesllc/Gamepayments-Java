@@ -1,7 +1,13 @@
 package com.teamgames;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.teamgames.gamepayments.Product;
 import com.teamgames.gamepayments.ProductResponse;
+import com.teamgames.gamepayments.cart.CartItem;
+import com.teamgames.gamepayments.checkout.Checkout;
+import com.teamgames.gamepayments.checkout.CheckoutResponse;
 
 public class Main {
 
@@ -18,7 +24,22 @@ public class Main {
 //		} catch (Exception e) {
 //			e.printStackTrace();
 //		}
-		System.out.println("Teamgames API version 1.03");
+		
+		List<CartItem> cartItems = new ArrayList<CartItem>();
+		cartItems.add(new CartItem(591, 1));
+		cartItems.add(new CartItem(583, 1));
+		
+//		try {
+//			CheckoutResponse checkoutResponse = Checkout.completeCheckout(
+//					"apiKey", 
+//					"username", cartItems);
+//			System.out.println("Redirect URL -> " + checkoutResponse.getRedirect());
+//			
+//		} catch (Exception e) {
+//			
+//		}
+		
+		System.out.println("Teamgames API version 1.04");
 	}
 
 }
